@@ -1,6 +1,25 @@
 .Search-form {
-    display: flex;
-    flex-direction: column;
     flex-grow: 1;
     padding: 0.5em;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Search-form select option {
+    border: none;
+}
+
+.Search-form select {
+    padding: 0.25em;
+    height: 30px;
+    font-family: var(--default-font-family);
+    color: var(--background-color);
+    background-color: #cdddef;
+    border: none;
+    box-shadow: -3px 3px 5px #c4a891;
+}
+
+.Search-form select:focus {
+    outline-color: var(--h1-color);
+    outline-width: 2px;;
 }

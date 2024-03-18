@@ -1,3 +1,13 @@
 .Place-article {
-    width: var(--place-article-width);
+    max-width: var(--place-article-width);
+    padding: 0.25em;
+}
+
+.Article-header h2 {
+    color: var(--h2-color);
+}
+
+.Place-article img {
+    width: 100%;
+    height: auto;
 }

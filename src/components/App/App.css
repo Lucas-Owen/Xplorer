@@ -1,6 +1,51 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow-x: clip;
+  min-height: 90%;
+}
+
+.App-header h1 {
+  color: var(--h1-color);
+}
+
 .App-body {
   height: 450px;
   width: 100%;
   display: flex;
   flex-direction: row;
+  position: relative;
+}
+
+#earth {
+  --earth-size: 700px;
+  position: absolute;
+  z-index: -1;
+  width: var(--earth-size);
+  height: var(--earth-size);
+  clip-path: circle(46%);
+  content: '';
+  display: block;
+  background-image: url("../../assets/earth.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  animation-name: rotate;
+  animation-duration: 180s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  left: 0;
+  top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

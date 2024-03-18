@@ -14,6 +14,7 @@ function App () {
   });
   return (
     <div className="App">
+      <div id="earth"></div>
       <header className="App-header">
         <h1>XPLORER</h1>
       </header>

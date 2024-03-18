@@ -20,7 +20,6 @@ export default function SearchForm (props) {
         <option value="">Select a City/Place</option>
         {places}
       </select>
-      <input type="submit" value="Submit" />
       <MapView/>
     </form>
   );

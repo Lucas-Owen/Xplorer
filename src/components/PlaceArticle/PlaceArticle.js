@@ -1,5 +1,6 @@
 import "./PlaceArticle.css";
 import * as PropTypes from "prop-types";
+import greatWall from "../../assets/great_wall_of_china.jpg"
 
 export default function PlaceArticle (props) {
   const { placeData } = props;
@@ -11,6 +12,7 @@ export default function PlaceArticle (props) {
       <p>
         {placeData.description}
       </p>
+      <img src={greatWall} alt="Great Wall of china"></img>
     </article>
   );
 }
