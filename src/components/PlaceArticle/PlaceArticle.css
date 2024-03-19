@@ -5,9 +5,35 @@
 
 .Article-header h2 {
     color: var(--h2-color);
+    margin: 8px 0;
 }
 
 .Place-article img {
+    --initial-opacity: 0.3;
     width: 100%;
     height: auto;
+    opacity: var(--initial-opacity);
+    animation-name: hideShowImage;
+    animation-duration: 10s;
+    animation-timing-function: cubic-bezier(0.4, 0.7, 1, 1);
+    animation-iteration-count: 1;
+}
+
+.Place-article .hidden {
+    display: none;
+}
+
+@keyframes hideShowImage {
+    0% {
+        opacity: var(--initial-opacity);
+    }
+    30% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0var(--initial-opacity)
+    }
 }

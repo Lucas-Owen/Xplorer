@@ -1,14 +1,26 @@
 {
     "Africa": {
         "Kenya": {
-            "Nairobi": {},
-            "Nairobi Orphanage": {}
+            "Nairobi": {
+                "description": "",
+                "images": []
+            },
+            "Nairobi Orphanage": {
+                "description": "",
+                "images": []
+            }
         },
         "Uganda": {}
     },
     "Asia": {
         "China": {
-            "Great Wall": {}
+            "Great Wall": {
+                "description": "",
+                "images": [
+                    "./assets/great_wall_of_china.jpg",
+                    "./assets/great_wall_of_china_ai2.jpg"
+                ]
+            }
         }
     },
     "Europe": {},
