@@ -17,8 +17,9 @@
             "Great Wall": {
                 "description": "",
                 "images": [
-                    "./assets/great_wall_of_china.jpg",
-                    "./assets/great_wall_of_china_ai2.jpg"
+                    "/assets/great_wall_of_china.jpg",
+                    "/assets/great_wall_of_china_ai2.jpg",
+                    "/assets/great_wall_of_china_ai3.jpg"
                 ]
             }
         }

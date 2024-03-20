@@ -1,25 +1,27 @@
 import "./PlaceArticle.css";
 import * as PropTypes from "prop-types";
-import greatWall from "../../assets/great_wall_of_china.jpg";
-import greatWall2 from "../../assets/great_wall_of_china_ai2.jpg";
-import greatWall3 from "../../assets/great_wall_of_china_ai3.jpg";
 import { useEffect } from "react";
 
 function autoScrollGallery (i) {
   const gallery = document.getElementsByClassName("gallery");
+  if (gallery.length === 0) return;
   Array.from(gallery).forEach((image, index) => {
     index === i ? image.classList.remove("hidden") : image.classList.add("hidden");
   });
-  setTimeout(() => autoScrollGallery((i+1) % gallery.length), 10000)
+  setTimeout(() => autoScrollGallery((i + 1) % gallery.length), 10000);
 }
 
 export default function PlaceArticle (props) {
-  useEffect(()=>{
-    autoScrollGallery(0)
-  }, [])
-  
   const { placeData } = props;
-  const gallery = [greatWall, greatWall2, greatWall3].map((image, index) => <img src={image} alt="Great Wall of china" className="gallery hidden" key={index}></img>);
+  const gallery = placeData.images ?
+    placeData.images
+      .map((image, index) =>
+        <img src={image} alt="Great Wall of china" className="gallery hidden" key={index}></img>
+      ) : [];
+
+  useEffect(() => {
+    autoScrollGallery(0);
+  }, [placeData.place]);
   return (
     <article className='Place-article'>
       <header className='Article-header'>

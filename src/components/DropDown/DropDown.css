@@ -1,0 +1,38 @@
+.DropDown ul {
+    list-style-type: none;
+    margin-block: 0;
+    padding-inline: 0;
+}
+
+.DropDown [data-isopen="false"] {
+    display: none;
+}
+
+.DropDown {
+    width: 140px;
+}
+
+.DropDown label,
+.DropDown li {
+    width: 100%;
+    height: 24px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.2em 0;
+    padding-left: 0.4em;
+    background-color: #336395;
+    color: #0d0d0d;
+}
+
+.DropDown li[data-selected="true"], .DropDown label {
+    background-color: #fad7af;
+}
+
+.DropDown li:hover {
+    background: #fad7af;
+}
+
+.DropDown label:hover {
+    box-shadow: -1px 1px 6px 1px #336395;
+    outline: none;
+}
