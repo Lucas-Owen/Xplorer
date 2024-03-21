@@ -12,7 +12,10 @@
 body {
   color: var(--default-color);
   font-family: var(--default-font-family);
+  --background-opacity: 0.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background-color);
+  background-image: linear-gradient(rgba(0,0,0,var(--background-opacity)), rgba(0,0,0,var(--background-opacity))), url("./assets/galaxy-night-landscape.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

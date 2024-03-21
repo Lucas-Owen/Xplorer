@@ -1,15 +1,21 @@
-.DropDown ul {
-    list-style-type: none;
-    margin-block: 0;
-    padding-inline: 0;
+.DropDown {
+    width: 150px;
+    height: 30px;
+    position: relative;
 }
 
 .DropDown [data-isopen="false"] {
     display: none;
 }
 
-.DropDown {
-    width: 140px;
+.DropDown ul {
+    list-style-type: none;
+    margin-block: 0;
+    padding-inline: 0;
+    border-top: 1px solid black;
+    position: absolute;
+    top: 100%;
+    width: 100%;
 }
 
 .DropDown label,
@@ -24,7 +30,8 @@
     color: #0d0d0d;
 }
 
-.DropDown li[data-selected="true"], .DropDown label {
+.DropDown li[data-selected="true"],
+.DropDown label {
     background-color: #fad7af;
 }
 

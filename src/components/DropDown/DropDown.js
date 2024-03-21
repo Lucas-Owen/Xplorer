@@ -1,24 +1,19 @@
-import React, { useEffect } from "react";
+import React from "react";
 import * as PropTypes from "prop-types";
 import { useState } from "react";
 import "./DropDown.css";
 
 export function DropDown (props) {
-  const { defaultValue, items, onSelectChange } = props;
-  const [currentValue, setCurrentValue] = useState(null);
-  const listElements = items
-    .map((item, index) =>
-      <li key={index} data-selected={item === currentValue} onClick={() => setCurrentValue(item)}>{item}</li>
-    );
+  const { defaultValue, currentValue, items, onSelectChange } = props;
   const [isOpen, toggleList] = useState(false);
-  useEffect(() => {
-    document.addEventListener("click", () => {
-      toggleList(false);
-    });
-  }, []);
+  const listElements = items.length ?
+    items.map((item, index) =>
+      <li key={index} data-selected={item === currentValue} onClick={() => { onSelectChange(item); toggleList(false); }}>{item}</li>
+    ) :
+    [<li style={{ textAlign: "center" }} onClick={(e) => toggleList(false)}>{"---"}</li>];
   return (
-    <div className="DropDown" onClick={(e) => { e.stopPropagation(); toggleList(!isOpen); }}>
-      <label htmlFor="DropDownList" data-isopen={!isOpen}>{currentValue == null ? defaultValue : currentValue}</label>
+    <div tabIndex={1} className="DropDown" onBlur={(e) => toggleList(false)}>
+      <label htmlFor="DropDownList" onClick={(e) => toggleList(!isOpen)}>{currentValue == null ? defaultValue : currentValue}</label>
       <ul data-isopen={isOpen}>
         {listElements}
       </ul>

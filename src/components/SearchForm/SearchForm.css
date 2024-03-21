@@ -4,27 +4,3 @@
     display: flex;
     justify-content: space-evenly;
 }
-
-.Search-form select option {
-    border: none;
-}
-
-.Search-form select {
-    padding: 0.25em;
-    height: 30px;
-    font-family: var(--default-font-family);
-    font-size: 0.9em;
-    font-weight: 600;
-    color: var(--background-color);
-    background-color: #bfbfbf;;
-    border: none;
-}
-
-.Search-form select:focus {
-    outline: none;
-}
-
-.Search-form select:hover {
-    box-shadow: -1px 1px 6px 1px #c4a891;
-    outline: none;
-}
