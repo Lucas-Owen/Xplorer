@@ -10,7 +10,12 @@
                 "images": []
             }
         },
-        "Uganda": {}
+        "Tanzania": {
+            "Serengeti": {
+                "description": "",
+                "images": []
+            }
+        }
     },
     "Asia": {
         "China": {
