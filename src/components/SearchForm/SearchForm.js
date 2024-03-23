@@ -17,7 +17,7 @@ export default function SearchForm (props) {
     <form className="Search-form" onSubmit={(e) => e.preventDefault()}>
       <DropDown items={continents} currentValue={placeData.continent} defaultValue={"Select a Continent"} onSelectChange={(value) => { onSelectChange({ "country": null, "continent": value }); }} />
       <DropDown items={countries} currentValue={placeData.country} defaultValue={"Select a Country"} onSelectChange={(value) => { onSelectChange({ "country": value }); }} />
-      <DropDown items={places} currentValue={placeData.place} defaultValue={"Select a City/Place"} onSelectChange={(value) => onSelectChange(onChangePlace(value))} />
+      <DropDown items={places} currentValue={placeData.place} defaultValue={"Select a Place"} onSelectChange={(value) => onSelectChange(onChangePlace(value))} />
       <MapView />
     </form>
   );

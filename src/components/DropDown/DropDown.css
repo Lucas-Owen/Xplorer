@@ -30,16 +30,26 @@
     color: #0d0d0d;
 }
 
-.DropDown li[data-selected="true"],
+.DropDown li[data-selected="true"] {
+    background-image: radial-gradient(ellipse at 20% 0%, #f5e1c9, #f7d3a9, #2e422e);
+}
+
 .DropDown label {
-    background-color: #fad7af;
+    background-image: radial-gradient(ellipse at 20% 0%, #f5e1c9, #f7d3a9, #2e422e);
 }
 
 .DropDown li:hover {
-    background: #fad7af;
+    background: #f7d3a9;
 }
 
-.DropDown label:hover {
+.DropDown label:hover, .DropDown:focus {
     box-shadow: -1px 1px 6px 1px #336395;
     outline: none;
 }
+
+.DropDown .defaultValue {
+    font-style: italic;
+    color: #4a4a4a;
+    background-color: #efdbc3;
+}
+

@@ -2,13 +2,16 @@ import "./PlaceArticle.css";
 import * as PropTypes from "prop-types";
 import { useEffect } from "react";
 
-function autoScrollGallery (i) {
-  const gallery = document.getElementsByClassName("gallery");
-  if (gallery.length === 0) return;
-  Array.from(gallery).forEach((image, index) => {
-    index === i ? image.classList.remove("hidden") : image.classList.add("hidden");
-  });
-  setTimeout(() => autoScrollGallery((i + 1) % gallery.length), 10000);
+function autoScrollGallery () {
+  let i = 0;
+  return () => {
+    const gallery = document.getElementsByClassName("gallery");
+    if (gallery.length === 0) return;
+    Array.from(gallery).forEach((image, index) => {
+      index === i ? image.classList.remove("hidden") : image.classList.add("hidden");
+    });
+    i = (i + 1) % gallery.length;
+  }
 }
 
 export default function PlaceArticle (props) {
@@ -16,12 +19,17 @@ export default function PlaceArticle (props) {
   const gallery = placeData.images ?
     placeData.images
       .map((image, index) =>
-        <img src={image} alt="Great Wall of china" className="gallery hidden" key={index}></img>
+        <img src={image.src} alt={image.alt} className="gallery hidden" key={index}></img>
       ) : [];
-
+  const animate = Boolean(gallery.length > 1);
   useEffect(() => {
-    autoScrollGallery(0);
-  }, [placeData.place]);
+    if (!animate)
+      return;
+    const scrollFunc = autoScrollGallery();
+    scrollFunc();
+    const intervalId = setInterval(scrollFunc, 10000);
+    return () => clearInterval(intervalId);
+  }, [placeData.place, animate]);
   return (
     <article className='Place-article'>
       <header className='Article-header'>
@@ -30,7 +38,9 @@ export default function PlaceArticle (props) {
       <p>
         {placeData.description}
       </p>
-      {gallery}
+      <div data-animate={animate}>
+        {gallery}
+      </div>
     </article>
   );
 }

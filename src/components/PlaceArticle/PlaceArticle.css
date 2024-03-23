@@ -9,9 +9,12 @@
 }
 
 .Place-article img {
-    --initial-opacity: 0.3;
     width: 100%;
     height: 350px;
+}
+
+.Place-article [data-animate="true"] img {
+    --initial-opacity: 0.3;
     opacity: var(--initial-opacity);
     animation-name: hideShowImage;
     animation-duration: 10s;
@@ -27,12 +30,15 @@
     0% {
         opacity: var(--initial-opacity);
     }
+
     30% {
         opacity: 1;
     }
+
     70% {
         opacity: 1;
     }
+
     100% {
         opacity: 0var(--initial-opacity)
     }

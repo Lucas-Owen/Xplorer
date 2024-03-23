@@ -15,7 +15,16 @@ body {
   --background-opacity: 0.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
   background-image: linear-gradient(rgba(0,0,0,var(--background-opacity)), rgba(0,0,0,var(--background-opacity))), url("./assets/galaxy-night-landscape.jpg");
   background-size: cover;
+  background-clip: border-box;
   background-repeat: no-repeat;
+  margin: 0;
+  padding: 8px;
+  overflow: hidden;
 }

@@ -13,7 +13,9 @@
         "Tanzania": {
             "Serengeti": {
                 "description": "",
-                "images": []
+                "images": [
+                    {"src":"/assets/serengeti_ai1.jpg", "alt": "Group of elephants taking shade under a tree"}
+                ]
             }
         }
     },
@@ -22,9 +24,9 @@
             "Great Wall": {
                 "description": "",
                 "images": [
-                    "/assets/great_wall_of_china.jpg",
-                    "/assets/great_wall_of_china_ai2.jpg",
-                    "/assets/great_wall_of_china_ai3.jpg"
+                    {"src":"/assets/great_wall_of_china.jpg", "alt": "Great Wall of China"},
+                    {"src":"/assets/great_wall_of_china_ai2.jpg", "alt": "Great Wall of China"},
+                    {"src":"/assets/great_wall_of_china_ai3.jpg", "alt": "Great Wall of China"}
                 ]
             }
         }

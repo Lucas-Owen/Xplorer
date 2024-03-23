@@ -11,9 +11,13 @@ export function DropDown (props) {
       <li key={index} data-selected={item === currentValue} onClick={() => { onSelectChange(item); toggleList(false); }}>{item}</li>
     ) :
     [<li style={{ textAlign: "center" }} onClick={(e) => toggleList(false)}>{"---"}</li>];
+  const { displayValue, labelClass } = currentValue == null ?
+    { displayValue: defaultValue, labelClass: "defaultValue" } :
+    { displayValue: currentValue, labelClass: "" };
+
   return (
     <div tabIndex={1} className="DropDown" onBlur={(e) => toggleList(false)}>
-      <label htmlFor="DropDownList" onClick={(e) => toggleList(!isOpen)}>{currentValue == null ? defaultValue : currentValue}</label>
+      <label className={labelClass} htmlFor="DropDownList" onClick={(e) => toggleList(!isOpen)}>{displayValue}</label>
       <ul data-isopen={isOpen}>
         {listElements}
       </ul>

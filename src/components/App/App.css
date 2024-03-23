@@ -3,7 +3,7 @@
   flex-direction: column;
   position: relative;
   overflow-x: clip;
-  min-height: 90%;
+  height: 100%;
 }
 
 .App-header h1 {
@@ -22,7 +22,6 @@
 #earth {
   --earth-size: 700px;
   position: absolute;
-  z-index: -1;
   width: var(--earth-size);
   height: var(--earth-size);
   clip-path: circle(46%);
