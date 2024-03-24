@@ -23,10 +23,10 @@ export default function PlaceArticle (props) {
       ) : [];
   const animate = Boolean(gallery.length > 1);
   useEffect(() => {
-    if (!animate)
-      return;
     const scrollFunc = autoScrollGallery();
     scrollFunc();
+    if (!animate)
+    return;
     const intervalId = setInterval(scrollFunc, 10000);
     return () => clearInterval(intervalId);
   }, [placeData.place, animate]);
