@@ -1,7 +1,9 @@
 .DropDown {
-    width: 150px;
     height: 30px;
     position: relative;
+    display: inline-block;
+    --dropdown-padding-left: 6px;
+    --dropdown-padding-top-bottom: 3px;
 }
 
 .DropDown [data-isopen="false"] {
@@ -15,19 +17,28 @@
     border-top: 1px solid black;
     position: absolute;
     top: 100%;
-    width: 100%;
+    z-index: 1;
+}
+
+.DropDown ul, .DropDown label {
+    width: calc(100% - var(--dropdown-padding-left));
 }
 
 .DropDown label,
 .DropDown li {
-    width: 100%;
     height: 24px;
     font-weight: 600;
-    display: inline-block;
-    padding: 0.2em 0;
-    padding-left: 0.4em;
+    display: block;
+    padding: var(--dropdown-padding-top-bottom) 0;
+    padding-left: var(--dropdown-padding-left);
     background-color: #336395;
     color: #0d0d0d;
+}
+
+.DropDown li {
+    width: 100%;
+    overflow: clip;
+    text-wrap: nowrap;
 }
 
 .DropDown li[data-selected="true"] {

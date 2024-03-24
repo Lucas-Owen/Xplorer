@@ -10,10 +10,11 @@ export function DropDown (props) {
     items.map((item, index) =>
       <li key={index} data-selected={item === currentValue} onClick={() => { onSelectChange(item); toggleList(false); }}>{item}</li>
     ) :
-    [<li style={{ textAlign: "center" }} onClick={(e) => toggleList(false)}>{"---"}</li>];
-  const { displayValue, labelClass } = currentValue == null ?
-    { displayValue: defaultValue, labelClass: "defaultValue" } :
-    { displayValue: currentValue, labelClass: "" };
+    [<li key={0} style={{ textAlign: "center" }} onClick={(e) => toggleList(false)}>{"---"}</li>];
+  const { displayValue, labelClass } = currentValue ?
+    { displayValue: currentValue, labelClass: "" }
+    :
+    { displayValue: defaultValue, labelClass: "defaultValue" };
 
   return (
     <div tabIndex={1} className="DropDown" onBlur={(e) => toggleList(false)}>

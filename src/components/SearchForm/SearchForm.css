@@ -2,5 +2,29 @@
     flex-grow: 1;
     padding: 0.5em;
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.Search-form .DropDown {
+    width: 150px;
+}
+
+.Search-form .dropdowns,
+.Search-form .mapDiv {
+    --padding-left-right: 20px;
+    --margin-top-or-bottom: 10px;
+    width: calc(100% - 2 * var(--padding-left-right));
+    padding: 0 var(--padding-left-right);
+}
+
+.Search-form .dropdowns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: var(--margin-top-or-bottom);
+}
+
+.Search-form .mapDiv {
+    margin-top: var(--margin-top-or-bottom);
+    height: 350px;
 }

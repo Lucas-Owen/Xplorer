@@ -1,21 +1,28 @@
 {
     "Africa": {
         "Kenya": {
-            "Nairobi": {
+            "Nairobi National Museum": {
                 "description": "",
-                "images": []
-            },
-            "Nairobi Orphanage": {
-                "description": "",
-                "images": []
+                "images": [],
+                "position": {
+                    "lat": -1.273543,
+                    "lng": 36.815028
+                }
             }
         },
         "Tanzania": {
             "Serengeti": {
                 "description": "",
                 "images": [
-                    {"src":"/assets/serengeti_ai1.jpg", "alt": "Group of elephants taking shade under a tree"}
-                ]
+                    {
+                        "src": "/assets/serengeti_ai1.jpg",
+                        "alt": "Group of elephants taking shade under a tree"
+                    }
+                ],
+                "position": {
+                    "lat": -2.279346,
+                    "lng": 34.796600
+                }
             }
         }
     },
@@ -24,10 +31,23 @@
             "Great Wall": {
                 "description": "",
                 "images": [
-                    {"src":"/assets/great_wall_of_china.jpg", "alt": "Great Wall of China"},
-                    {"src":"/assets/great_wall_of_china_ai2.jpg", "alt": "Great Wall of China"},
-                    {"src":"/assets/great_wall_of_china_ai3.jpg", "alt": "Great Wall of China"}
-                ]
+                    {
+                        "src": "/assets/great_wall_of_china.jpg",
+                        "alt": "Great Wall of China"
+                    },
+                    {
+                        "src": "/assets/great_wall_of_china_ai2.jpg",
+                        "alt": "Great Wall of China"
+                    },
+                    {
+                        "src": "/assets/great_wall_of_china_ai3.jpg",
+                        "alt": "Great Wall of China"
+                    }
+                ],
+                "position": {
+                    "lat": 40.431908,
+                    "lng": 116.570374
+                }
             }
         }
     },

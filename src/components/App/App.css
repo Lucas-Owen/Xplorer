@@ -25,7 +25,6 @@
   width: var(--earth-size);
   height: var(--earth-size);
   clip-path: circle(46%);
-  content: '';
   display: block;
   background-image: url("../../assets/earth.jpg");
   background-repeat: no-repeat;
@@ -35,8 +34,8 @@
   animation-duration: 180s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  left: 0;
-  top: 50px;
+  left: 10px;
+  top: 25px;
   margin-left: auto;
   margin-right: auto;
 }
