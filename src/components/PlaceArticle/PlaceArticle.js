@@ -35,12 +35,12 @@ export default function PlaceArticle (props) {
       <header className='Article-header'>
         <h2>{location.place.name || "Select a place"}</h2>
       </header>
-      <p>
-        {location.description}
-      </p>
       <div data-animate={animate}>
         {gallery}
       </div>
+      <p>
+        {location.place.description}
+      </p>
     </article>
   );
 }

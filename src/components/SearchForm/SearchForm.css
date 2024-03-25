@@ -6,14 +6,15 @@
 }
 
 .Search-form .DropDown {
-    width: 150px;
+    min-width: 150px;
+    max-width: max-content;
 }
 
 .Search-form .dropdowns,
 .Search-form .mapDiv {
     --padding-left-right: 20px;
     --margin-top-or-bottom: 10px;
-    width: calc(100% - 2 * var(--padding-left-right));
+    width: 100%;
     padding: 0 var(--padding-left-right);
 }
 

@@ -3,7 +3,9 @@
   flex-direction: column;
   position: relative;
   overflow-x: clip;
+  width: 100%;
   height: 100%;
+  align-items: center;
 }
 
 .App-header h1 {
@@ -12,21 +14,33 @@
 }
 
 .App-body {
-  min-height: 100vh;
-  width: 100%;
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  max-width: 800px;
+  flex-direction: column;
   position: relative;
 }
 
+.App-body h2 {
+  margin: 0.3rem 0;
+}
+
+.App-body h3 {
+  margin: 0.5rem 0;
+}
+
+.App-body p {
+  margin: 0.5rem 0;
+}
+
 #earth {
-  --earth-size: 700px;
+  --earth-size: 450px;
   position: absolute;
   width: var(--earth-size);
   height: var(--earth-size);
   clip-path: circle(46%);
   display: block;
-  background-image: url("../../assets/earth.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, var(--background-opacity)), rgba(0, 0, 0, var(--background-opacity))), url("../../assets/earth.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -34,8 +48,7 @@
   animation-duration: 180s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  left: 10px;
-  top: 25px;
+  top: 80px;
   margin-left: auto;
   margin-right: auto;
 }

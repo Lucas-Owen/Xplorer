@@ -5,26 +5,38 @@
   --default-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
   'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
   sans-serif;
-  --default-color: #c1c2eb;
+  --default-color: #e0e0e0;
   --background-color: black;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   color: var(--default-color);
   font-family: var(--default-font-family);
-  --background-opacity: 0.5;
+  --background-opacity: 0.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
+  min-height: 100vh;
+  height: 100%;
 }
 
 #root {
-  height: 100%;
+  height: inherit;
   background-image: linear-gradient(rgba(0,0,0,var(--background-opacity)), rgba(0,0,0,var(--background-opacity))), url("./assets/galaxy-night-landscape.jpg");
   background-size: cover;
   background-clip: border-box;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   margin: 0;
   padding: 8px;
   overflow: hidden;
+  min-height: 100vh;
 }
