@@ -1,11 +1,13 @@
 .Place-article {
     max-width: 100%;
-    padding: 0.25em;
+    padding: 0 0.5em;
 }
 
 .Article-header h2 {
     color: var(--h2-color);
     margin: 8px 0;
+    padding-top: 8px;
+    padding-bottom: 12px;
 }
 
 .Place-article img {
@@ -13,6 +15,10 @@
     height: 350px;
 }
 
+.Place-article img, .Place-article h2, .Place-article p {
+    padding-left: var(--padding-left-right);
+    padding-right: var(--padding-left-right);
+}
 .Place-article [data-animate="true"] img {
     --initial-opacity: 0.3;
     opacity: var(--initial-opacity);

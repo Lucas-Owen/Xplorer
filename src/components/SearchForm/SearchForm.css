@@ -12,7 +12,6 @@
 
 .Search-form .dropdowns,
 .Search-form .mapDiv {
-    --padding-left-right: 20px;
     --margin-top-or-bottom: 10px;
     width: 100%;
     padding: 0 var(--padding-left-right);

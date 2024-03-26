@@ -19,6 +19,7 @@
   max-width: 800px;
   flex-direction: column;
   position: relative;
+  --padding-left-right: 20px;
 }
 
 .App-body h2 {

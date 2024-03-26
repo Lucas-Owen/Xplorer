@@ -12,7 +12,7 @@
         },
         "Tanzania": {
             "Serengeti": {
-                "description": "",
+                "description": "The Serengeti is a vast ecosystem located in East-Central Africa, spanning approximately 12,000 square miles across northern Tanzania and extending to southwestern Kenya. It's renowned for its large mammal diversity and the Great Migration, where millions of wildebeest, zebras, and other species move in a seasonal pattern for grazing. The name 'Serengeti' comes from the Maasai language, meaning 'endless plains,' aptly describing the area's sprawling landscapes. This region is also crucial for conservation efforts and ecological studies, providing insights into the complex interactions within natural habitats.",
                 "images": [
                     {
                         "src": "/assets/serengeti_ai1.jpg",
@@ -29,7 +29,7 @@
     "Asia": {
         "China": {
             "Great Wall": {
-                "description": "",
+                "description": "The Great Wall of China is an impressive defensive structure that spans thousands of miles across northern China. Built over centuries, it served as a barrier against nomadic invaders and winds through rugged terrain, including mountains and rivers. The most well-preserved sections date back to the Ming dynasty and remain a testament to human engineering and perseverance. Designated a UNESCO World Heritage site, the Great Wall stands as a symbol of China's rich history and resilience.",
                 "images": [
                     {
                         "src": "/assets/great_wall_of_china.jpg",
