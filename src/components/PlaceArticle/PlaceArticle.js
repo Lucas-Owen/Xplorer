@@ -21,7 +21,7 @@ export default function PlaceArticle (props) {
       .map((image, index) =>
         <img src={image.src} alt={image.alt} className="gallery hidden" key={index}></img>
       ) : [];
-  const animate = Boolean(gallery.length > 1)
+  const animate = Boolean(gallery.length > 1);
   useEffect(() => {
     const scrollFunc = autoScrollGallery();
     scrollFunc();
@@ -31,13 +31,14 @@ export default function PlaceArticle (props) {
     }
   }, [location.place.name, animate]);
   return (
-    <article className='Place-article'>
+    location.place.name && <article className='Place-article'>
       <header className='Article-header'>
-        <h2>{location.place.name || "Select a place"}</h2>
+        <h2>{location.place.name}</h2>
       </header>
+      {gallery.length ? 
       <div data-animate={animate}>
         {gallery}
-      </div>
+      </div>: <></>}
       <p>
         {location.place.description}
       </p>

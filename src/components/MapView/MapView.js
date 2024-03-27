@@ -1,5 +1,5 @@
-import { APIProvider, InfoWindow, Map, Marker, useMap } from "@vis.gl/react-google-maps";
-import { useEffect, useState, useCallback } from "react";
+import { APIProvider, Map, Marker, useMap } from "@vis.gl/react-google-maps";
+import { useEffect } from "react";
 import * as PropTypes from "prop-types";
 import { Tween, Easing, update } from "@tweenjs/tween.js";
 const API_KEY = process.env.REACT_APP_GOOGLE_MAPS_JAVASCRIPT_API_KEY;
@@ -13,18 +13,7 @@ const INITIAL_CAMERA = {
 
 export function CustomMap (props) {
   const map = useMap();
-  const { position, title } = props;
-  const [cameraProps, setCameraProps] = useState(INITIAL_CAMERA);
-  const handleCameraChange = useCallback((ev) =>
-    setCameraProps(ev.detail)
-    , []);
-
-  useEffect(() => {
-    if (!map) return;
-    map.addListener("click", (mapsMouseEvent) => {
-      console.log(mapsMouseEvent.latLng.toJSON());
-    });
-  }, [map]);
+  const { position, positions, onSelectChange } = props;
 
   useEffect(() => {
     if (position) {
@@ -46,16 +35,11 @@ export function CustomMap (props) {
       requestAnimationFrame(animate);
     }
   }, [map, position]);
+  const markers = positions.map(place => <Marker position={place.position} onClick={()=>onSelectChange(place)} />)
   return (
     <div style={{ width: "100%", height: "100%" }}>
       <Map defaultCenter={INITIAL_CAMERA.center} defaultZoom={INITIAL_CAMERA.zoom}>
-        {
-          position &&
-          <>
-            {/* <InfoWindow position={position}>{title}</InfoWindow> */}
-            <Marker position={position} />
-          </>
-        }
+        {markers}
       </Map>
     </div>
   );

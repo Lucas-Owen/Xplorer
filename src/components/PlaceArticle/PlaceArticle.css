@@ -15,10 +15,6 @@
     height: 350px;
 }
 
-.Place-article img, .Place-article h2, .Place-article p {
-    padding-left: var(--padding-left-right);
-    padding-right: var(--padding-left-right);
-}
 .Place-article [data-animate="true"] img {
     --initial-opacity: 0.3;
     opacity: var(--initial-opacity);
@@ -30,6 +26,10 @@
 
 .Place-article .hidden {
     display: none;
+}
+
+.Place-article > p {
+    line-height: 1.8rem;
 }
 
 @keyframes hideShowImage {
