@@ -27,7 +27,7 @@ export default function PlaceArticle (props) {
   const gallery = location.place.images ?
     location.place.images
       .map((image, index) =>
-        <img src={image.src} alt={image.alt} className={`gallery${index !== 0 ? " hidden" : ""}`} key={index}></img>
+        <img src={process.env.PUBLIC_URL + image.src} alt={image.alt} className={`gallery${index !== 0 ? " hidden" : ""}`} key={index}></img>
       ) : [];
   const animate = Boolean(gallery.length > 1);
   useEffect(() => {
