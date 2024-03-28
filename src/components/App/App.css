@@ -48,7 +48,7 @@
 }
 
 .social-link {
-  color: white;
+  color: var(--default-color);
 }
 
 .App-body {
@@ -61,16 +61,38 @@
 }
 
 .App-body h2 {
-  margin: 0.3rem 0;
+  padding: 0.4rem 0;
+  margin: 0;
 }
 
 .App-body h3 {
-  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  margin: 0;
 }
 
 .about > p {
-  line-height: 1.4rem;
-  margin: 0.5rem 0;
+  line-height: 1.8rem;
+}
+
+.paragraph-container {
+  --bg-color: rgba(50, 50, 50, 0.4);
+  padding: 0 0.8rem 0.8rem;
+  background-color: var(--bg-color);
+  box-shadow: -1px 1px 8px 1px var(--bg-color);
+  border-radius: 0.4rem;
+  margin: 0.8rem 0;
+}
+
+.paragraph-container p {
+  line-height: 1.8rem;
+  border-left: 5px solid #000000;
+  padding-left: 0.5rem;
+  padding-right: 0.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin: 0.2rem;
+  color: var(--default-color);
+  background-color: rgb(29, 29, 29);
 }
 
 #earth {
