@@ -8,8 +8,10 @@
     --dropdown-padding-top-bottom: 3px;
 }
 
-.DropDown, .DropDown ul, .DropDown label, .DropDown ul li {
+.DropDown, .DropDown ul, .DropDown .label, .DropDown ul li {
     box-sizing: border-box;
+    background-color: rgb(54, 54, 54);
+    color: var(--default-color);
 }
 
 .DropDown ul {
@@ -30,43 +32,41 @@
     border-radius: 0 0 9px 9px;
 }
 
-.DropDown ul, .DropDown label {
+.DropDown ul, .DropDown .label {
     width: 100%;
 }
 
-.DropDown label,
+.DropDown .label,
 .DropDown li {
     min-height: var(--dropdown-min-height);
     font-weight: 600;
     display: block;
     padding: var(--dropdown-padding-top-bottom) 0;
     padding-left: var(--dropdown-padding-left);
-    background-color: #336395;
-    color: #0d0d0d;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: clip;
 }
 
 .DropDown li {
     width: 100%;
-    overflow: clip;
-    text-wrap: nowrap;
 }
 
-.DropDown li[data-selected="true"], .DropDown label {
-    background-image: radial-gradient(ellipse at 20% 0%, #f5e1c9, #f7d3a9, #c5cac5);
+.DropDown li[data-selected="true"], .DropDown .label {
+    background: #1e1e1e;
 }
 
 .DropDown li[data-selected="false"]:hover {
-    background: #f7d3a9;
+    background: black;
 }
 
-.DropDown:hover label, .DropDown:hover ul {
+.DropDown:hover .label, .DropDown:hover ul {
     cursor: pointer;
-    box-shadow: -1px 1px 20px -8px #e3d3bf;
+    box-shadow: -1px 1px 4px -1px rgba(227, 211, 191, 0.7);
 }
 
 .DropDown .defaultValue {
     font-style: italic;
-    color: #4a4a4a;
-    background-color: #efdbc3;
+    color: #787878;
 }
 

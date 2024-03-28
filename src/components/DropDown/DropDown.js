@@ -18,7 +18,7 @@ export function DropDown (props) {
 
   return (
     <div tabIndex={1} className="DropDown" onBlur={(e) => toggleList(false)}>
-      <label className={labelClass} htmlFor="DropDownList" onClick={(e) => toggleList(!isOpen)}>{displayValue}</label>
+      <div className={`${labelClass} label`} htmlFor="DropDownList" onClick={(e) => toggleList(!isOpen)}>{displayValue}</div>
       <ul data-isopen={isOpen}>
         {listElements}
       </ul>

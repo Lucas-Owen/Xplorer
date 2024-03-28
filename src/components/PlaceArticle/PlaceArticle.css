@@ -1,51 +1,82 @@
 .Place-article {
     max-width: 100%;
-    padding: 0 0.5em;
+    padding: 0 0.5em 0.8em 0.5em;
 }
 
-.Article-header h2 {
+.place-article-header h2 {
     color: var(--h2-color);
     margin: 8px 0;
     padding-top: 8px;
     padding-bottom: 12px;
 }
 
-.Place-article img {
-    width: 100%;
-    height: 350px;
+.article-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.Place-article [data-animate="true"] img {
-    --initial-opacity: 0.3;
-    opacity: var(--initial-opacity);
-    animation-name: hideShowImage;
-    animation-duration: 10s;
-    animation-timing-function: cubic-bezier(0.4, 0.7, 1, 1);
+.gallery-container {
+    position: relative;
+    width: calc(100% - 0.4rem);
+    margin: 1.2rem 0.2rem 0.2rem;
+    height: 350px;
+    overflow-x: hidden;
+}
+
+.Place-article img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;/*cubic-bezier(0.4, 0.7, 1, 1);*/
     animation-iteration-count: 1;
+    --initial-opacity: 0.3;
+}
+
+.Place-article img.animate-in {
+    animation-name: inFromRight;
+    left: 0;
+}
+
+.Place-article img.animate-out {
+    animation-name: outToLeft;
+    left: 0;
 }
 
 .Place-article .hidden {
     display: none;
 }
 
-.Place-article > p {
-    line-height: 1.8rem;
+.place-article-body {
+    border-radius: 0.8rem 0.8rem 0 0;
+    padding: 0.3rem;
+    background-color: rgba(104, 104, 104, 0.8);
+    color: black;
+    box-shadow: -1px 1px 8px 1px white;
 }
 
-@keyframes hideShowImage {
+@keyframes inFromRight {
     0% {
         opacity: var(--initial-opacity);
+        left: 100%;
     }
 
-    30% {
-        opacity: 1;
-    }
 
-    70% {
+    100% {
         opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes outToLeft {
+    0% {
+        opacity: 1;
+        left: 0;
     }
 
     100% {
-        opacity: 0var(--initial-opacity)
+        opacity: var(--initial-opacity);
+        left: -100%;
     }
 }
