@@ -6,6 +6,12 @@
   width: 100%;
   min-height: inherit;
   align-items: center;
+  --earth-size: 450px;
+  padding: 0 0.5rem;
+  max-width: 800px;
+  min-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .App-header {
@@ -31,6 +37,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: inherit;
 }
 
 .App-footer h3 {
@@ -54,7 +61,6 @@
 .App-body {
   display: flex;
   width: 100%;
-  max-width: 800px;
   flex-direction: column;
   position: relative;
   --padding-left-right: 20px;
@@ -70,7 +76,7 @@
   margin: 0;
 }
 
-.about > p {
+.about>p {
   line-height: 1.8rem;
 }
 
@@ -96,7 +102,6 @@
 }
 
 #earth {
-  --earth-size: 450px;
   position: fixed;
   width: var(--earth-size);
   height: var(--earth-size);
@@ -110,9 +115,10 @@
   animation-duration: 180s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  top: 60px;
+  top: 25%;
   margin-left: auto;
   margin-right: auto;
+  transition: width 1s, height 1s;
 }
 
 @keyframes rotate {
@@ -122,5 +128,32 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .App {
+    padding: 0 0.6rem;
+    --earth-size: 350px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .App {
+    --earth-size: 750px;
+  }
+
+  .paragraph-container {
+    padding: 0 0.4rem 0.4rem;
+    margin: 0.8rem 0;
+  }
+
+  .paragraph-container p {
+    line-height: 1.8rem;
+    padding-left: 0.5rem;
+    padding-right: 0.2rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    margin: 0;
   }
 }

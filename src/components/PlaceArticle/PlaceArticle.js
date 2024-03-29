@@ -39,7 +39,7 @@ export default function PlaceArticle (props) {
   }, [location.place.name, animate]);
   useEffect(()=>{
     if (location.place.name) {
-      setTimeout(() => document.getElementById("result").scrollIntoView({behavior: "smooth"}), 3000)
+      setTimeout(() => document.getElementById("result").scrollIntoView({behavior: "smooth"}), 4000)
     }
   }, [location.place.name])
   return (

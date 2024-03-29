@@ -7,9 +7,8 @@
 }
 
 .Search-form .DropDown {
-    min-width: 150px;
+    min-width: 180px;
     max-width: 180px;
-    width: 180px;
 }
 
 .Search-form .dropdowns {
@@ -23,4 +22,31 @@
 .Search-form .mapDiv {
     height: 350px;
     flex-grow: 1;
+    transition: height 500ms;
+}
+
+@media screen and (max-width: 700px) {
+    .Search-form {
+        flex-flow: column-reverse;
+    }
+    .Search-form .dropdowns {
+        flex-flow: row wrap;
+        margin-bottom: 0.5em;
+        padding-left: 0;
+    }
+    .Search-form .mapDiv {
+        height: 300px;
+    }
+    .Search-form .DropDown {
+        max-width: 100%;
+        min-width: 120px;
+        margin: 0.2rem;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Search-form .mapDiv {
+        height: 260px;
+    }
 }

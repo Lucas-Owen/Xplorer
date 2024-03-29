@@ -20,11 +20,11 @@ export function CustomMap (props) {
       return;
     if (position) {
       const center = map.getCenter();
-      const finalPosition = { center: position, zoom: 7 };
+      const finalPosition = { center: position, zoom: 6 };
       const cameraOptions = { center: { lat: center.lat(), lng: center.lng() }, zoom: map.getZoom() };
 
       new Tween(cameraOptions)
-        .to(finalPosition, 3000)
+        .to(finalPosition, 4000)
         .easing(Easing.Quadratic.Out)
         .onUpdate(() => {
           map.moveCamera(cameraOptions);

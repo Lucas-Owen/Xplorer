@@ -65,7 +65,7 @@ function App () {
         <SearchForm formData={data} location={location} onSelectChange={(newState) => onPlaceChange({ ...location, ...newState })} />
         <PlaceArticle location={location} />
       </div>
-      <footer className='App-footer'>
+      <div className='App-footer'>
         <h3>Check us out</h3>
         <div className='socials'>
           <div className="social-link-container">
@@ -78,7 +78,7 @@ function App () {
             <a href="https://github.com/Lucas-Owen" target='_blank' rel='noreferrer' referrerPolicy='no-referrer' className="social-link"><Github /></a>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 }

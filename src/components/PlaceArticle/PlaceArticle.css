@@ -22,6 +22,7 @@
     margin: 1.2rem 0.2rem 0.2rem;
     height: 350px;
     overflow-x: hidden;
+    transition: height 500ms;
 }
 
 .Place-article img {
@@ -78,5 +79,17 @@
     100% {
         opacity: var(--initial-opacity);
         left: -100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Place-article .gallery-container {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Place-article .gallery-container {
+        height: 240px;
     }
 }
