@@ -20,7 +20,7 @@
     position: relative;
     width: calc(100% - 0.4rem);
     margin: 1.2rem 0.2rem 0.2rem;
-    height: 350px;
+    height: 370px;
     overflow-x: hidden;
     transition: height 500ms;
 }
@@ -90,6 +90,6 @@
 
 @media screen and (max-width: 450px) {
     .Place-article .gallery-container {
-        height: 240px;
+        height: 210px;
     }
 }

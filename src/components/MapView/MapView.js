@@ -37,7 +37,7 @@ export function CustomMap (props) {
       requestAnimationFrame(animate);
     }
   }, [map, position]);
-  const markers = positions.map(place => <Marker position={place.position} onClick={() => onSelectChange(place)} />);
+  const markers = positions.map((place, index) => <Marker key={index} position={place.position} onClick={() => onSelectChange(place)} />);
   return (
     <div style={{ width: "100%", height: "100%" }}>
       <Map defaultCenter={INITIAL_CAMERA.center} defaultZoom={INITIAL_CAMERA.zoom}>

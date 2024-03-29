@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 body {
   color: var(--default-color);
   font-family: var(--default-font-family);
-  --background-opacity: 0.8;
+  --background-opacity: 0.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;

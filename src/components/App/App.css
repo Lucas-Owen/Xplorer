@@ -81,12 +81,12 @@
 }
 
 .paragraph-container {
-  --bg-color: rgba(50, 50, 50, 0.4);
+  --bg-color: rgba(60, 60, 60, 0.6);
   padding: 0 0.8rem 0.8rem;
   background-color: var(--bg-color);
   box-shadow: -1px 1px 8px 1px var(--bg-color);
   border-radius: 0.4rem;
-  margin: 0.8rem 0;
+  margin: 1.1rem 0;
 }
 
 .paragraph-container p {
@@ -98,7 +98,7 @@
   padding-bottom: 0.3rem;
   margin: 0.2rem;
   color: var(--default-color);
-  background-color: rgb(29, 29, 29);
+  background-color: rgb(18, 18, 18);
 }
 
 #earth {
@@ -145,7 +145,6 @@
 
   .paragraph-container {
     padding: 0 0.4rem 0.4rem;
-    margin: 0.8rem 0;
   }
 
   .paragraph-container p {
