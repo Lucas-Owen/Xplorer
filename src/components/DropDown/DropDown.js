@@ -3,7 +3,7 @@ import * as PropTypes from "prop-types";
 import { useState } from "react";
 import "./DropDown.css";
 
-export function DropDown (props) {
+export default function DropDown (props) {
   const { defaultValue, currentValue, items, onSelectChange } = props;
   const [isOpen, toggleList] = useState(false);
   const listElements = items.length ?
@@ -18,7 +18,7 @@ export function DropDown (props) {
 
   return (
     <div tabIndex={1} className="DropDown" onBlur={(e) => toggleList(false)}>
-      <div className={`${labelClass} label`} htmlFor="DropDownList" onClick={(e) => toggleList(!isOpen)}>{displayValue}</div>
+      <div className={`${labelClass} label`} role="status" onClick={(e) => toggleList(!isOpen)}>{displayValue}</div>
       <ul data-isopen={isOpen}>
         {listElements}
       </ul>
@@ -30,6 +30,11 @@ export function DropDown (props) {
 DropDown.propTypes = {
   defaultValue: PropTypes.string,
   currentValue: PropTypes.string,
-  items: PropTypes.array,
+  items: PropTypes.arrayOf(PropTypes.string),
   onSelectChange: PropTypes.func
 };
+
+DropDown.defaultProps = {
+  items: [],
+  onSelectChange: ()=>{}
+}

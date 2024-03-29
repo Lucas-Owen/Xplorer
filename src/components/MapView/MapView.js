@@ -39,7 +39,7 @@ export function CustomMap (props) {
   }, [map, position]);
   const markers = positions.map((place, index) => <Marker key={index} position={place.position} onClick={() => onSelectChange(place)} />);
   return (
-    <div style={{ width: "100%", height: "100%" }}>
+    <div className="map-container" style={{ width: "100%", height: "100%" }}>
       <Map defaultCenter={INITIAL_CAMERA.center} defaultZoom={INITIAL_CAMERA.zoom}>
         {markers}
       </Map>
@@ -61,5 +61,10 @@ MapView.propTypes = {
     lat: PropTypes.number,
     lng: PropTypes.number
   }),
-  title: PropTypes.string
+  title: PropTypes.string,
+  positions: PropTypes.array
 };
+
+MapView.defaultProps = {
+  positions: []
+}

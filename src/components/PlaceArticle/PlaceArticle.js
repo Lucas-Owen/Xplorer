@@ -64,3 +64,11 @@ export default function PlaceArticle (props) {
 PlaceArticle.propTypes = {
   location: locationShape
 };
+
+PlaceArticle.defaultProps = {
+  location: {
+    place: {
+      images: []
+    }
+  }
+}
