@@ -48,11 +48,134 @@
                     "lat": 40.431908,
                     "lng": 116.570374
                 }
+            },
+            "Himalayas, Gyachung Kang": {
+                "description": "Gyachung Kang, also known as Gyāchung Kāng (Chinese: 格重康峰), is a majestic mountain situated in the Mahalangur Himal section of the Himalayas. It proudly stands as the 15th highest peak in the world, nestled between the towering giants of Cho Oyu (8,201 m) and Mount Everest (8,848 m). This magnificent peak straddles the border between Nepal and China. Despite its impressive elevation, Gyachung Kang remains relatively lesser-known due to its lack of significant prominence (only 700 meters). The mountain was first conquered in 1964 by a Japanese team, led by climbers Y. Kato, K. Sakaizawa, Pasang Phutar, K. Machida, and K. Yasuhisa ",
+                "images": [
+                    {
+                        "src": "/assets/himalayas_1.jpg",
+                        "alt": "Himalayas"
+                    }
+                ],
+                "position": {
+                    "lat": 28.098057,
+                    "lng": 86.742226
+                }
+            }
+        },
+        "Nepal": {
+            "Himalayas, Mt. Everest": {
+                "description": "Mount Everest, also known as Sagarmatha in Nepali and Chomolungma in Tibetan, stands as Earth’s highest mountain above sea level. It is situated in the Mahalangur Himal sub-range of the Himalayas, straddling the border between Nepal and the Tibet Autonomous Region of China. Reaching an awe-inspiring elevation of 29,032 feet (8,849 meters), Mount Everest has long been revered by local communities. Its Tibetan name, Chomolungma, translates to “Goddess Mother of the World” or “Goddess of the Valley,” while the Sanskrit name Sagarmatha means “Peak of Heaven.” The mountain’s identity as the highest point on Earth’s surface was officially recognized in 1852 by the Survey of India. Interestingly, before that, it was referred to as Peak XV until it was renamed in honor of Sir George Everest, the British surveyor general of India from 1830 to 1843",
+                "images": [
+                    {
+                        "src": "/assets/himalayas_1.jpg",
+                        "alt": "Himalayas"
+                    }
+                ],
+                "position": {
+                    "lat": 28.5983,
+                    "lng": 83.9310
+                }
+            }
+        },
+        "Indonesia": {
+            "Bali": {
+                "description": "Bali, the “Island of the Gods,” is a tropical paradise in Indonesia. Its stunning landscapes, warm hospitality, and rich culture make it a must-visit destination. Bali offers budget-friendly options, year-round tropical weather, and postcard-perfect beaches. Explore lush jungles, ancient temples, and world-class surfing spots. Whether you seek adventure or relaxation, Bali promises an unforgettable journey.",
+                "images": [
+                    {
+                        "src": "/assets/bali-1.jpg",
+                        "alt": "Bali - Beach sunset"
+                    },
+                    {
+                        "src": "/assets/bali-2.jpg",
+                        "alt": "Bali - Floating cabin"
+                    }
+                ],
+                "position": {
+                    "lat": -8.4095,
+                    "lng": 115.1889
+                }
             }
         }
     },
-    "Europe": {},
-    "North America": {},
-    "South America": {},
-    "Oceania": {}
+    "Europe": {
+        "France": {
+            "Eiffel Tower": {
+                "description": "The Eiffel Tower, also known as the “Iron Lady,” is a wrought-iron lattice tower located on the Champ de Mars in Paris, France. Designed by the renowned engineer Gustave Eiffel, it was built as the entrance arch for the 1889 World Fair (Exposition Universelle). Standing 1,050 feet (320 meters) tall, approximately the height of an 81-story building, the Eiffel Tower is an iconic symbol of Paris. Its open-lattice wrought iron structure, erected in just about two years, revolutionized civil engineering and architectural design. When it opened to the public on May 15, 1889, it astounded with its lightness, strength, and aesthetic appeal. Today, it remains one of the most famous landmarks globally, offering breathtaking views of the city from its observation decks",
+                "images": [
+                    {
+                        "src": "/assets/eiffel-tower-1.jpg",
+                        "alt": "The eiffiel tower - close up"
+                    },
+                    {
+                        "src": "/assets/eiffel-tower-2.jpg",
+                        "alt": "The eiffiel tower - night view"
+                    }
+                ],
+                "position": {
+                    "lat": 48.8584,
+                    "lng": 2.2945
+                }
+            }
+        }
+    },
+    "North America": {
+        "USA": {
+            "The Statue of Liberty": {
+                "description": "The Statue of Liberty, officially known as Liberty Enlightening the World, stands on Liberty Island in New York Harbor. Designed by sculptor Frédéric Bartholdi in collaboration with engineer Gustave Eiffel, it was a gift from France to the United States on the centenary of American independence in 1876. This colossal neoclassical sculpture, composed of thinly pounded copper sheets over a steel framework, represents liberty personified as a woman. She holds a torch in her raised right hand, symbolizing enlightenment, and clutches a tablet in her left, bearing the adoption date of the Declaration of Independence. At her feet lies a broken shackle and chains, commemorating the abolition of slavery. Standing 305 feet (93 meters) high, including its pedestal, the Statue of Liberty remains an enduring symbol of freedom and hope for millions of immigrants who arrived at Ellis Island seeking a better life",
+                "images": [
+                    {
+                        "src": "/assets/statue-of-liberty-1.jpg",
+                        "alt": "The statue of liberty"
+                    },
+                    {
+                        "src": "/assets/statue_of_liberty-2.jpg",
+                        "alt": "The statue of liberty"
+                    }
+                ],
+                "position": {
+                    "lat": 40.6892,
+                    "lng": -74.0445
+                }
+            }
+        }
+    },
+    "South America": {
+        "Brazil": {
+            "Christ the Redeemer": {
+                "description": "Christ the Redeemer, also known as Cristo Redentor in Portuguese, is an Art Deco statue of Jesus Christ located in Rio de Janeiro, Brazil. This iconic sculpture was created by French-Polish sculptor Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. Romanian sculptor Gheorghe Leonida sculpted the face. Constructed between 1922 and 1931, the statue stands 30 meters (98 feet) high, excluding its 8-meter (26 feet) pedestal. Its arms stretch 28 meters (92 feet) wide. Made of reinforced concrete and soapstone, Christ the Redeemer is situated at the peak of the 700-meter (2,300 feet) Corcovado mountain in the Tijuca National Park, overlooking the city of Rio de Janeiro. As the largest Art Deco-style sculpture in the world, it symbolizes Christianity globally and has become a cultural icon of both Rio de Janeiro and Brazil. It was also voted one of the New 7 Wonders of the World",
+                "images": [
+                    {
+                        "src": "/assets/christ_the_redeemer.jpg",
+                        "alt": "Christ the Redeemer statue - Brazil"
+                    }
+                ],
+                "position": {
+                    "lat": -22.9519,
+                    "lng": -43.2105
+                }
+            }
+        }
+    },
+    "Oceania": {
+        "Australia": {
+            "Sydney Opera House": {
+                "description": "The Sydney Opera House, an architectural marvel, graces the foreshore of Sydney Harbour in New South Wales, Australia. Designed by Danish architect Jørn Utzon, this iconic masterpiece is renowned worldwide for its distinctive sail-shaped shells that form its roof. Constructed between 1959 and 1973, the Opera House stands as a testament to human creativity and engineering prowess. Its unique design, resembling billowing sails or seashells, has made it one of the most-photographed buildings globally. The Opera House hosts a diverse range of performances, including symphony concerts, opera, ballet, theater, and contemporary music. Its largest venue, the Concert Hall, seats 2,679 and resonates with the harmonies of renowned artists. Whether you admire it from a distance or explore its interiors, the Sydney Opera House remains an enduring symbol of culture, art, and innovation",
+                "images": [
+                    {
+                        "src": "/assets/sydney-opera-house-1.jpg",
+                        "alt": "The Sydney Opera House"
+                    },
+                    {
+                        "src": "/assets/sydney-opera-house-2.jpg",
+                        "alt": "The Sydney Opera House"
+                    }
+                ],
+                "position": {
+                    "lat": -33.8568,
+                    "lng": 151.2153
+                }
+            }
+        }
+    }
 }
